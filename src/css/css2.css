@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-font-family: 'Itim', cursive;
+
 /*----------------------fond_d'écran-------------------------------*/
 body{
-
+font-family: 'Itim', cursive !important;
+background-color: #5EB991 !important;
+margin:0;
 }
 /*----------------------xxxxxxxxxxx-------------------------------*/
 /*----------------------texte-------------------------------*/
