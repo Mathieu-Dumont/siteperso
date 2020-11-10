@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+.logo{
+  margin-right: 27.5%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*~~~~~~~~~~~~~~~~Page_1~~~~~~~~~~~~~~~~*/
+.home{
+    margin:0;
+}
+.block{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.image_gauche{
+  width: 60%;
+  background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.image_droite{
+  width: 40%;
+  background-image: url(../img/smartphone_réseau.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/*----------------------texte home-------------------------------*/
+.text_1{
+  text-align: right;
+  padding-top: 10%;
+  padding-right: 2%;
+}
+.Prenom p{
+font-size: 70px;
+}
+.Nom p{
+  font-size: 50px;
+  color: #5EB991;
+}#5EB991
+.acroche p{
+  font-size: 30px
+}
+/*----------------------xxxxxxxxxxx-------------------------------*/
+/*----------------------menu_réseau-------------------------------*/
+.menu_réseau{
+  width: 100%;
+
+  padding-top: 22%;
+  /*padding-left: 6%;/*11*/
+}
+.réseau{
+  text-align:center;
+  font-size: 200%;
+    color: #4CAF50;
+}
+.social img{
+  width: 50px;
+  height: 50px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  overflow : hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+/*----------------------xxxxxxxxxxx-------------------------------*/
+/*----------------------SECTION COMPETENCES-------------------------------*/
+.competence{
+  margin:0;
+  background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h3gauche{
+    width: 90%;
+}
+.compétencesbackground{
+  margin:0;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c80{
+    width: 80%;
+    background-color: #8B8;
+}
+.c10{
+    width: 10%;
+    background-color: #4B8;
+}
+.c90{
+    width: 90%;
+    background-color: #4B8;
+}
+.c95{
+    width: 95%;
+    background-color: #4B8;
+}
+.c100{
+    width: 100%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+.menu_réseau_comp{
+  display: block;
+  margin-top: 2%;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social_comp{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 50px;;
+  height: 50px;
+  overflow : hidden;
+  border-radius: 50%;
+}
+.social_comp img{
+  width: 50px;
+  height: 50px;
+}
+/*SECTIONS*/
+.h3gauche{
+  font-size: 30px;
+}
+.titre_comp{
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 10%;
+}
+
+.conteneur3{
+  color:white;
+  margin: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+}
+/*--------------------------------------------------------------*/
+/*----------------------A_propos-------------------------------*/
+.a_propos{
+  margin: 0;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.conteneur2{
+  margin: 2%;
+  color: white;
+  margin: 2%;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.titre_a_propos{
+  display: block;
+  font-size: 70px;
+  text-align: center;
+  width: 30%;
+  height: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+}
+.titre_a_propos p{
+  vertical-align: middle;
+  text-align: center;
+}
+.presentation{
+  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.h3gauche_a_propos{
+  font-size: 40px;
+  font-weight: lighter;
+}
+.img_a_propos{
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu_réseau_a_propos{
+  display:block;
+  width: 21%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+.social_a_propos{
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 24%;
+  height: 100%
+  overflow : hidden;
+  border-radius: 50%;
+}
+.social_a_propos img{
+  width: 50px;
+  height: 50px;
+}
+/*----------------------xp-------------------------------*/
+.xp{
+  margin:0;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  width: 100%;
+  height: 100vh;
+}
+.conteneur4{
+  color: white;
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
+.titre_experience{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+.titre_experience p{
+  margin:0;
+}
+.entreprise{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 30%;
+  height: 30%;
+  margin-left: 19%;
+}
+.description{
+  display: flex;
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin-right: 19%;
+}
+.logo_entreprise{
+  margin-left: 10%;
+  position: absolute;
+  float: left;
+  background-image: url(../img/logo_gnet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7vh;
+  height: 11vh;
+}
+.poste{
+  float: right;
+  text-align: right;
+  width: 30%;
+  height: 5vh;
+  margin-left: 45%;
+}
+.entreprise_nom{
+  float: right;
+  text-align: right;
+  width: 30%;
+  height: 5vh;
+  margin-left: 45%;
+}
+.date_durée{
+  float: right;
+  text-align: right;
+  width: 30%;
+  height: 5vh;
+  margin-left: 45%;
+}
+.adresse{
+  float: right;
+  text-align: right;
+  width: 30%;
+  height: 5vh;
+  margin-left: 45%;
+}
+.button {
+  background-color: #5EB991/*#1c87c9*/;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 10%;
+  margin-left: 40%;
+}
+/*----------------------form-------------------------------*/
+.form{
+  margin:0;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  width: 100%;
+  height: 100vh;
+}
+.titre_form{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  padding-top: 5%;
+}
+.titre_form p{
+  margin:0;
+}
+.logo_formation_lycee{
+  display: inline-table;
+  background-image: url(../img/lemonnier_.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 7vh;;
+}
+.etablissement_formation{
+  float: left;
+  width: 20%;
+  height: 30%;
+  margin-left: 30%
+}
+.formation{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right:29%;
+}
+.etablissement_nom{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.date_durée_form{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.adresse_form{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.description_formation{
+  display: inline-block;
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin-right: 20%;
+}
+.logo_formation_supp{
+  display: inline-table;
+  background-image: url(../img/sainte-ursule_.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15vh;
+  height: 10vh;
+
+}
+.etablissement_formation2{
+  float: left;
+  width: 20%;
+  height: 30%;
+  margin-left: 30%
+}
+.formation2{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right:29%;
+}
+.etablissement_nom2{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.date_durée_form2{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.adresse_form2{
+  display: inline-table;
+  float: right;
+  text-align: left;
+  width: 30%;
+  height: 5%;
+  margin-right: 29%;
+}
+.description_formation2{
+  display: inline-block;
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin-right: 20%;
+}
+.formation_lycee{
+  display: block;
+  width: 100%;
+  height: 350px;
+}
+.formation_bts{
+  display: block;
+  width: 100%;
+  height: 350px;
+}
+/*----------------------Contact-------------------------------*/
+.conteneur6{
+  margin:0;
+  /*background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  width: 100%;
+  height: 100vh;
+}
+.contact-form{
+  width: 85%;
+  max-width: 600px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 615vh;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  color: black;
+}
+.contact-form h1{
+  margin-top: 0;
+  font-weight: 200;
+}
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.btn{
+  display: inline-block;
+  background:#5eb891;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.middle {
+  text-align: center;
+  }
+.test{
+  background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Itim', cursive;
+}
+.footer{
+  background-image: url(../img/fond_1.3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+.margin {
+  margin:0;
+  padding-top: 1%;
+}
