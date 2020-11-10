@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 src/index_complet.html
+web: vendor/bin/heroku-php-apache2 src/
