@@ -232,7 +232,7 @@ include 'contact.php'
                         <textarea name="mess"></textarea>
                     </div>
                     <div class="middle">
-                        <div class="g-recaptcha" data-sitekey="6Lc-DuEZAAAAAJpfQSH9al3aYcmRF0O9-FHPK3Rw"></div>
+                        <div class="g-recaptcha" data-sitekey="6Lc-DuEZAAAAAINHRGGi0vy0pvymBHuYLGvEODQv"></div>
                     </div>
                     <input class="btn" type="submit" value="Valider" name="submitpost">
                 </div>
